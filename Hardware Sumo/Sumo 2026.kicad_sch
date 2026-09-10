@@ -4346,10 +4346,6 @@
 		(uuid "238a07e2-1c1a-430a-8b8c-229d85991e7d")
 	)
 	(no_connect
-		(at 128.27 87.63)
-		(uuid "2d60dd40-8889-4954-9c45-09ec8a9282b8")
-	)
-	(no_connect
 		(at 97.79 102.87)
 		(uuid "3a71c25c-c318-4e5f-95f2-e8f655ee2708")
 	)
@@ -5035,7 +5031,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 80.01) (xy 97.79 80.01)
+			(xy 133.35 87.63) (xy 128.27 87.63)
 		)
 		(stroke
 			(width 0)
@@ -5565,7 +5561,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 130.81) (xy 133.35 130.81)
+			(xy 128.27 128.27) (xy 133.35 128.27)
 		)
 		(stroke
 			(width 0)
@@ -28986,12 +28982,12 @@
 		(uuid "49cb47d3-e421-4ddc-884d-dcb22d6c0e22")
 	)
 	(label "R"
-		(at 93.98 80.01 0)
+		(at 133.35 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "4a2cde29-d281-43e5-af68-86716d7895e6")
 	)
@@ -29136,7 +29132,7 @@
 		(uuid "c22c70f9-b1c3-4e96-b7e3-0f912d2fb871")
 	)
 	(label "SW2"
-		(at 133.35 130.81 180)
+		(at 133.35 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -35436,7 +35432,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 58.1152 121.92 0)
 			(hide yes)
 			(show_name no)
