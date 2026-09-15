@@ -4119,6 +4119,16 @@
 		)
 		(uuid "275e5dd9-a943-4a45-9e9b-73bf70fe93e5")
 	)
+	(text "LED INDICATIVE BY P0WER\n"
+		(exclude_from_sim no)
+		(at 128.27 170.18 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "330ff584-dcf9-4848-a17a-c89e96e8d526")
+	)
 	(text "BUTTONS\n"
 		(exclude_from_sim no)
 		(at 92.71 148.59 0)
@@ -4236,6 +4246,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "484661ca-3b87-46c5-b8cf-7d9123f6969e")
+	)
+	(junction
+		(at 119.38 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56742db1-ec83-4ceb-9c23-aeb3f307d729")
+	)
+	(junction
+		(at 119.38 193.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68b18c76-dddf-4f3b-933c-cb36c1985692")
 	)
 	(junction
 		(at 57.15 121.92)
@@ -4629,6 +4651,16 @@
 		)
 		(uuid "2fd6f780-04f4-424f-86ba-59c436467d60")
 	)
+	(bus
+		(pts
+			(xy 130.81 144.78) (xy 130.81 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fd9e011-2164-49fb-9ea4-e0d74b513dd7")
+	)
 	(wire
 		(pts
 			(xy 33.02 158.75) (xy 30.48 158.75)
@@ -4768,6 +4800,16 @@
 			(type default)
 		)
 		(uuid "474b44ef-3b80-4940-ab62-58b1d6de86c4")
+	)
+	(bus
+		(pts
+			(xy 119.38 193.04) (xy 130.81 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d2558b3-c859-43b2-b05c-cfccc91cb42f")
 	)
 	(wire
 		(pts
@@ -5038,6 +5080,26 @@
 			(type default)
 		)
 		(uuid "72c0fd98-d835-47ff-b48a-6db5094a6deb")
+	)
+	(wire
+		(pts
+			(xy 123.19 184.15) (xy 123.19 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72cb1927-478d-43c2-8821-cc8b0163b8f1")
+	)
+	(wire
+		(pts
+			(xy 133.35 105.41) (xy 128.27 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72f70400-4c31-436d-8439-de7bedfe66aa")
 	)
 	(wire
 		(pts
@@ -5318,6 +5380,16 @@
 			(type default)
 		)
 		(uuid "9ba80d2d-4b0d-4ce9-9ba7-103185d625e8")
+	)
+	(bus
+		(pts
+			(xy 119.38 144.78) (xy 130.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dcdbb23-b6f3-4a33-ae1e-ca73d8e27064")
 	)
 	(wire
 		(pts
@@ -5751,6 +5823,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 151.13) (xy 123.19 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2140a81-0afc-47a6-a22f-13e6e83def54")
+	)
+	(wire
+		(pts
 			(xy 35.56 25.4) (xy 35.56 30.48)
 		)
 		(stroke
@@ -5848,6 +5930,16 @@
 			(type default)
 		)
 		(uuid "fdde6ee8-ebca-47d4-bbca-8a19f65fd7a5")
+	)
+	(wire
+		(pts
+			(xy 123.19 171.45) (xy 123.19 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fff8689d-920a-4721-93af-9a9b53478734")
 	)
 	(image
 		(at 212.09 127)
@@ -28791,6 +28883,16 @@
 			"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
 		)
 	)
+	(label "L"
+		(at 133.35 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "01304f6c-ee78-4762-aeba-972012ca8af8")
+	)
 	(label "INB1"
 		(at 133.35 100.33 180)
 		(effects
@@ -29141,6 +29243,16 @@
 		)
 		(uuid "c38a3172-800b-45b6-85ec-32a716c876cf")
 	)
+	(label "L"
+		(at 123.19 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c44999bd-41df-4b14-9129-3bbcca2fe1e7")
+	)
 	(label "SW1"
 		(at 133.35 123.19 180)
 		(effects
@@ -29243,7 +29355,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 56.642 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -30187,7 +30299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 23.622 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -31032,6 +31144,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 123.19 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32c65c4c-3fd8-481d-8e4f-8179ec1a5b0a")
+		(property "Reference" "#PWR054"
+			(at 123.19 190.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 189.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edabfb24-afa6-4310-8792-8ed98c6c837a")
+		)
+		(instances
+			(project "Sumo 2026"
+				(path "/3d5ea52f-a655-47e3-8668-27270e97ed7d"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 64.77 123.19 0)
 		(mirror y)
 		(unit 1)
@@ -31692,7 +31882,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 66.802 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -31812,6 +32002,99 @@
 			(project "Sumo 2026"
 				(path "/3d5ea52f-a655-47e3-8668-27270e97ed7d"
 					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 123.19 175.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50b23f15-26fd-4efc-845f-c041e16ca1b2")
+		(property "Reference" "D3"
+			(at 130.81 176.8475 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 128.27 176.8475 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 123.19 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 123.19 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 123.19 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ab76ea2-6feb-4410-9201-56f1d9ad3256")
+		)
+		(pin "2"
+			(uuid "75268e44-53e8-4edb-a10f-fc27ceea30a5")
+		)
+		(instances
+			(project "Sumo 2026"
+				(path "/3d5ea52f-a655-47e3-8668-27270e97ed7d"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -32166,7 +32449,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 26.162 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -32483,7 +32766,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 43.942 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -32919,7 +33202,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 64.262 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -33406,7 +33689,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 33.782 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -35007,6 +35290,87 @@
 		)
 	)
 	(symbol
+		(lib_id "EESTN5:R")
+		(at 123.19 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b82daffe-28c6-4619-ae91-fcbf07d89770")
+		(property "Reference" "R11"
+			(at 120.65 167.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 124.46 166.3699 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 123.19 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "47f111bc-5efe-4554-ba68-244015bc12cd")
+		)
+		(pin "2"
+			(uuid "b610c91d-c558-431e-ac6c-c544ab9d10ef")
+		)
+		(instances
+			(project "Sumo 2026"
+				(path "/3d5ea52f-a655-47e3-8668-27270e97ed7d"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 37.465 111.125 90)
 		(unit 1)
@@ -35512,7 +35876,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 54.102 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -36220,7 +36584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 36.322 33.02 90)
 			(hide yes)
 			(show_name no)
@@ -37342,7 +37706,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 46.482 33.02 90)
 			(hide yes)
 			(show_name no)
